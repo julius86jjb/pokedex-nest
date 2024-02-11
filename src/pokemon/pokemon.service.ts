@@ -94,7 +94,6 @@ export class PokemonService {
 
     // const result = await this.pokemonModel.findByIdAndDelete(id);
 
-
     /* delete only by id + validate in db id exist */
 
     const {deletedCount} = await this.pokemonModel.deleteOne({ '_id': id });
